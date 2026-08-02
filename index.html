@@ -683,15 +683,19 @@
         }
       }
 
-            /* AI Badge */
+      /* AI Badge */
       .ai-badge {
         display: inline-flex;
         align-items: center;
         gap: 8px;
         padding: 7px 16px;
         border-radius: 40px;
-        background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(0,229,255,0.08));
-        border: 1px solid rgba(124,58,237,0.35);
+        background: linear-gradient(
+          135deg,
+          rgba(124, 58, 237, 0.15),
+          rgba(0, 229, 255, 0.08)
+        );
+        border: 1px solid rgba(124, 58, 237, 0.35);
         font-family: var(--font-mono);
         font-size: 0.72rem;
         color: var(--text);
@@ -707,17 +711,27 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(90deg, transparent, rgba(124,58,237,0.12), transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(124, 58, 237, 0.12),
+          transparent
+        );
         transform: translateX(-100%);
         animation: aiShimmer 3s ease-in-out infinite;
       }
       @keyframes aiShimmer {
-        0%   { transform: translateX(-100%); }
-        60%, 100% { transform: translateX(100%); }
+        0% {
+          transform: translateX(-100%);
+        }
+        60%,
+        100% {
+          transform: translateX(100%);
+        }
       }
       .ai-badge:hover {
-        border-color: rgba(124,58,237,0.7);
-        box-shadow: 0 0 20px rgba(124,58,237,0.2);
+        border-color: rgba(124, 58, 237, 0.7);
+        box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
       }
       .ai-badge-icon {
         width: 18px;
@@ -748,7 +762,6 @@
         color: var(--muted);
         font-size: 0.68rem;
       }
-
 
       /* ─── HERO MOBILE RESPONSIVE ────────────────────────── */
       @media (max-width: 768px) {
@@ -2116,7 +2129,7 @@
               <i class="fa fa-moon" id="themeIcon"></i>
             </button>
             <a
-              href="https://drive.google.com/file/d/1chN3AoRyevMRMpVuYUD47zE4jpFyAXYQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ySy1SUmF6HAwPU3LL90QyifrOsXU2zqk/view?usp=drivesdk"
               download
               class="btn nav-cta"
             >
@@ -2149,7 +2162,7 @@
               I build secure, performant web applications and automated systems
               — turning complex problems into clean, maintainable solutions.
             </p>
-             <!-- AI Badge -->
+            <!-- AI Badge -->
             <div class="ai-badge">
               <span class="ai-badge-icon"><i class="fa fa-microchip"></i></span>
               <span class="ai-badge-text">Integrated with AI</span>
@@ -2740,7 +2753,7 @@
             </div>
           </article>
           <!....Pest Control Web Application....>
-           <article class="project-card" data-category="web">
+          <article class="project-card" data-category="web">
             <div class="project-media">
               <div class="project-imgs">
                 <img
@@ -2779,7 +2792,9 @@
               <div class="project-category">Service · Web</div>
               <h3>Pest Control Web Application</h3>
               <p>
-                A comprehensive web application for managing and tracking pest control services, featuring user authentication, service scheduling, and reporting.
+                A comprehensive web application for managing and tracking pest
+                control services, featuring user authentication, service
+                scheduling, and reporting.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Node.js</span
@@ -3053,7 +3068,7 @@
                 <div>
                   <h4>Resume</h4>
                   <a
-                    href="https://drive.google.com/file/d/1chN3AoRyevMRMpVuYUD47zE4jpFyAXYQ/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ySy1SUmF6HAwPU3LL90QyifrOsXU2zqk/view?usp=drivesdk"
                     download
                     >Download CV</a
                   >
@@ -3062,29 +3077,13 @@
             </div>
             <div class="social-row">
               <a
-                href="#"
+                href="https://github.com/your-github-username"
                 class="social-btn"
-                aria-label="LinkedIn"
+                aria-label="GitHub"
                 target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="#" class="social-btn" aria-label="GitHub" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="#"
-                class="social-btn"
-                aria-label="Twitter"
-                target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="#"
-                class="social-btn"
-                aria-label="Instagram"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
+              >
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
 
