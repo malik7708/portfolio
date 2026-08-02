@@ -1755,6 +1755,63 @@
       .c-card a:hover {
         color: var(--accent);
       }
+      .github-card {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 22px 24px;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          180deg,
+          rgba(8, 11, 16, 0.96),
+          rgba(17, 22, 32, 0.98)
+        );
+        border: 1px solid rgba(0, 229, 255, 0.14);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+      }
+      .github-card-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 18px;
+        background: rgba(0, 229, 255, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        font-size: 1.6rem;
+        flex-shrink: 0;
+      }
+      .github-card-content h4 {
+        font-size: 0.9rem;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .github-card-content p {
+        color: var(--muted);
+        margin-bottom: 12px;
+        line-height: 1.6;
+        max-width: 320px;
+      }
+      .github-card-content a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #000;
+        font-family: var(--font-mono);
+        font-weight: 700;
+        font-size: 0.82rem;
+        letter-spacing: 0.06em;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+      .github-card-content a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 32px rgba(0, 229, 255, 0.22);
+      }
       .social-row {
         display: flex;
         gap: 10px;
@@ -3074,16 +3131,24 @@
                   >
                 </div>
               </div>
-            </div>
-            <div class="social-row">
-              <a
-                href="https://github.com/your-github-username"
-                class="social-btn"
-                aria-label="GitHub"
-                target="_blank"
-              >
-                <i class="fab fa-github"></i>
-              </a>
+              <div class="github-card">
+                <div class="github-card-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="github-card-content">
+                  <h4>GitHub Portfolio</h4>
+                  <p>
+                    Explore my latest projects, code samples, and open-source
+                    contributions.
+                  </p>
+                  <a
+                    href="https://github.com/your-github-username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Visit GitHub</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
 
